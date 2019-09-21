@@ -48,12 +48,6 @@
 
         <AdminArticles v-show="mode==='articles'" />
 
-        <v-container v-show="mode==='log'" class="vContainer">
-          <h2 class="section-subtitle">Log Data</h2>
-          <div class="content-container">
-            <LogChart />
-          </div>
-        </v-container>
       </div>
     </div>
   </div>
@@ -64,14 +58,12 @@
     mapGetters
   } from "vuex";
   import AdminArticles from "@/components/AdminPage/Articles";
-  import LogChart from "@/components/AdminPage/LogChart";
   import UserInfo from "@/components/AdminPage/UserInfo";
 
   export default {
     name: "AdminPage",
     components: {
       AdminArticles,
-      LogChart,
       UserInfo
     },
     data() {
