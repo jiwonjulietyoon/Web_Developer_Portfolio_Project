@@ -11,3 +11,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "@/css/style.scss";
+
+
+</style>
